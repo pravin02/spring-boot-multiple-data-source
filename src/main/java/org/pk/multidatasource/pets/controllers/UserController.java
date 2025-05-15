@@ -1,7 +1,8 @@
-package org.pk.multidatasource.controllers;
+package org.pk.multidatasource.pets.controllers;
 
-import org.pk.multidatasource.entities.User;
-import org.pk.multidatasource.repositories.UserRepository;
+import org.pk.multidatasource.pets.entities.User;
+import org.pk.multidatasource.pets.repositories.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,11 +12,8 @@ import java.util.List;
 @RequestMapping("/v1/users")
 public class UserController {
 
-    private final UserRepository userRepository;
-
-    public UserController(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+    @Autowired
+    private UserRepository userRepository;
 
     @GetMapping
     public ResponseEntity<?> getUsersList() {

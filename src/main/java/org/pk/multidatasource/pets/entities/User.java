@@ -1,4 +1,4 @@
-package org.pk.multidatasource.entities;
+package org.pk.multidatasource.pets.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,6 +1,6 @@
-package org.pk.multidatasource.repositories;
+package org.pk.multidatasource.pets.repositories;
 
-import org.pk.multidatasource.entities.User;
+import org.pk.multidatasource.pets.entities.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
