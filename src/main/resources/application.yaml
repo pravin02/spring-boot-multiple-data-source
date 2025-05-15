@@ -5,16 +5,16 @@ spring:
 ---
 spring:
   datasource:
-    #pets:
-    url: jdbc:postgresql://localhost:5432/petclient
-    username: postgres
-    password: postgres
-    driverClassName: org.postgresql.Driver
-#    todos:
-#      url: jdbc:postgresql://localhost:5432/todos
-#      username: postgres
-#      password: postgres
-#      driverClassName: org.postgresql.Driver
+    pets:
+      url: jdbc:postgresql://localhost:5432/petclient
+      username: postgres
+      password: postgres
+      driverClassName: org.postgresql.Driver
+    todos:
+      url: jdbc:postgresql://localhost:5432/todos
+      username: postgres
+      password: postgres
+      driverClassName: org.postgresql.Driver
   jpa:
     hibernate:
       ddlAuto: update
