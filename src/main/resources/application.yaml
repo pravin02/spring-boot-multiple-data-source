@@ -1,0 +1,30 @@
+spring:
+  application:
+  name: multiple-data-source
+
+---
+spring:
+  datasource:
+    #pets:
+    url: jdbc:postgresql://localhost:5432/petclient
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+#    todos:
+#      url: jdbc:postgresql://localhost:5432/todos
+#      username: postgres
+#      password: postgres
+#      driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddlAuto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        persister:
+          entity: ERROR
